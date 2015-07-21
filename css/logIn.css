@@ -1,0 +1,131 @@
+/* @group general styles
+---------------------------------------------------------------------------------------------*/
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:微软雅黑，宋体，Serif,Sans-serif,Monospace;
+	font-size:1em;
+	background-image:url("../img/logInBackground.jpg");
+	background-repeat:no-repeat;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;	
+}
+p{
+	line-height:50px;
+}
+input[type="button"]{
+	width:90px;
+	height:30px;
+	font-weight:bold;
+	border-radius:0.5em;
+	margin-right:15px;
+	cursor:pointer;
+}
+em{
+	font-size:20px;
+	font-weight:bold;
+}
+@keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+@-moz-keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+@-webkit-keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+@-o-keyframes show_logIn{
+	from{
+		height:0px;
+	}
+	to{
+		height:60%;
+	}
+}
+/* @group page structure
+----------------------------------------------------------------------------------------------*/
+.content{
+	width:100%;
+	height:522px;
+	padding-top:8%;
+	background-color:rgba(255,255,255,0.7);
+}
+/*
+.logInArea{
+	width:57%;
+	height:70%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(102,153,204,0.6);
+	border-radius:1em;
+}
+*/
+.logInArea{
+	width:57%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:rgba(102,153,204,0.6);
+	border-radius:1em;
+	animation:show_logIn 1s;
+	-webkit-animation:show_logIn 1s;
+	-moz-animation:show_logIn 1s;
+	-o-animation:show_logIn 1s;
+}
+/* @group page component
+----------------------------------------------------------------------------------------------*/
+h1{
+	height:15%;
+	width:100%;
+	padding-left:5%;
+}
+#inputArea{
+	width:100%;
+	height:85%;
+}
+#left{
+	float:left;
+	width:40%;
+	height:100%;
+	margin-left:5px;
+}
+#right{
+	width:59%;
+	height:100%;
+	border-bottom-right-radius:1em;
+	margin-left:41%;
+	background-color:rgba(255,255,255,0.5);
+	text-align:center;
+}
+#right>p{
+	line-height:90px;
+	font-size:20px;
+}
+.inputLabel{
+	font-weight:bold;
+}
+input[type="input"]{
+	height:25px;
+}
+input[type="password"]{
+	height:25px;
+	margin-left:15px;
+}
