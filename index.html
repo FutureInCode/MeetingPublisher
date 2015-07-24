@@ -6,16 +6,40 @@
 		<link href="css/index.css" rel="stylesheet" type="text/css"></link>
 	</head>
 	<body>
-		<header>
-			<div id="foreHead">
-				<label id="headerLabel1">会议通知系统</label>
-				<label id="headerLabel2">用户名</label>
+		
+		<div class="backgroundDiv">
+			<header>
+				<div id="foreHead">
+					<label id="headerLabel1">会议通知系统</label>
+					<label id="headerLabel2">用户名</label>
+				</div>
+			</header>
+			<div class="navigator">
+				<nav id="nav1">待参加会议</nav>
+				<nav id="nav2">我通知的会议</nav>
+				<nav id="nav3">参会历史</nav>
+				<nav id="nav4">发布会议</nav>
 			</div>
-		</header>
-		<div class="navigator">
-			<nav id="nav1">待参加会议</nav>
-			<nav id="nav2">我通知的会议</nav>
-			<nav id="nav3">增加会议</nav>
+			<div id="indexContent">
+				<table class="meetingList">
+					<caption id="listCaption1"><h2>待参加会议</h2></caption>
+					<tr>
+						<th class="publisher">会议发起人</th><th class="publisherName">会议主题</th><th class="meetingTitle">会议时间</th><th class="meetingStatus">状态</th>
+					</tr>
+					<tr>
+						<td class="publisher"><label class="publisherName"></label></td><td class="meetingTitle"></td><td class="meetingDate"></td><td class="meetingStatus"></td>
+					</tr>
+					<tr>
+						<td class="publisher"><label class="publisherName"></label></td><td class="meetingTitle"></td><td class="meetingDate"></td><td class="meetingStatus"></td>
+					</tr>
+					<tr>
+						<td class="publisher"><label class="publisherName"></label></td><td class="meetingTitle"></td><td class="meetingDate"></td><td class="meetingStatus"></td>
+					</tr>
+					<tr>
+						<td class="publisher"><label class="publisherName"></label></td><td class="meetingTitle"></td><td class="meetingDate"></td><td class="meetingStatus"></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</body>
 </html>
