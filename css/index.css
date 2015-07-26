@@ -4,12 +4,21 @@
 	padding:0px;
 	margin:0px;
 }
+body{
+	overflow-x:hidden;
+}
 header{
 	position:fixed;
 	top:0px;
 	width:100%;
 	height:75px;
 	background-color:rgba(0,153,204,0.7);
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#ccccff),to(#0066cc));
+	background-image:-moz-linear-gradient(top,#ccccff,#0099ff);
+	/*IE9*/
+	background-image:filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ccccff,endColorstr=#0066cc);
+	/*IE8*/
+	background-image:-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ccccff,endColorstr=#0066cc)";
 }
 .navigator{
 	position:fixed;
@@ -21,11 +30,10 @@ header{
 nav{
 	float:left;
 	width:24.94%;
-	background-color:rgba(0,153,204,0.5);
+	background-color:rgba(0,153,250,0.5);
 	height:100%;
 	text-align:center;
 	cursor:pointer;
-	border-top:0.1px solid;
 	border-color:grey;
 }
 nav:hover{
@@ -33,28 +41,39 @@ nav:hover{
 	color:white;
 }
 .backgroundDiv{
+	position:absolute;
+	top:105px;
 	width:100%;
 	height:683px;
 	background:url("../img/indexBg.jpg") no-repeat center center;
 }
 .meetingList{
 	width:95%;
-	background-color:rgba(255,255,255,0.6);
+	position:relative;
+	float:left;
+	top:5%;
+	margin-top:5px;
+	transition:all 0.5s;
+	background-color:rgba(255,255,255,0.7);
+}
+table{
 	border-collapse:collapse;
-	margin-left:auto;
-	margin-right:auto;
 }
 tr{
 	height:30px;
 	width:100%;
 	cursor:pointer;
 }
+tr:nth-child(odd){
+	background-color:rgba(0,153,204,0.2);
+}
 tr:hover{
 	background-color:rgba(255,255,255,0.4);
 }
 td{
-	padding:5px;
+	padding:3px;
 	height:100%;
+	text-align:center;
 }
 th{
 	padding:5px;
@@ -71,6 +90,7 @@ th{
 }
 .meetingStatus{
 	width:10%;
+	color:red;
 }
 /* @group page component
 ----------------------------------------------------------------------------------------------*/
@@ -116,12 +136,22 @@ th{
 	border-color:grey;
 }
 #indexContent{
-	margin-top:105px;
+	postion:absolute;
 	width:100%;
 	height:100%;
+	margin:auto;
 	background-color:rgba(255,255,255,0.4);
 }
 #listCaption1{
 	height:30px;
 	width:97.5%;
+}
+#notFinished{
+	left:2.5%;
+}
+#myHoldingMeeting{
+	left:2000px;
+}
+#meetingHistory{
+	left:2000px;;
 }
